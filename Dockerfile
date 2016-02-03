@@ -1,5 +1,5 @@
 FROM alpine:edge
-MAINTAINER Josh Sandlin <josh@thenullbyte.org>
+MAINTAINER Jonathan Baker <chessracer@gmail.com>
 
 RUN apk --update add \
   nginx \
@@ -7,8 +7,8 @@ RUN apk --update add \
   php-pdo \
   php-json \
   php-openssl \
-  php-mysql \
-  php-pdo_mysql \
+  php-pgsql \
+  php-pdo_pgsql \
   php-mcrypt \
   php-sqlite3 \
   php-pdo_sqlite \
