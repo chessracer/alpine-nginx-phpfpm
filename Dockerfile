@@ -28,6 +28,7 @@ ADD nginx.conf /etc/nginx/nginx.conf
 VOLUME ["/var/www", "/etc/nginx/sites-enabled"]
 
 ADD nginx-supervisor.ini /etc/supervisor.d/nginx-supervisor.ini
+ENV TIMEZONE America/Los_Angeles
 
 EXPOSE 80 9000
 
