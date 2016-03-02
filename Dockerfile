@@ -30,9 +30,6 @@ VOLUME ["/var/www", "/etc/nginx/sites-enabled"]
 ADD nginx-supervisor.ini /etc/supervisor.d/nginx-supervisor.ini
 ENV TIMEZONE America/Los_Angeles
 
-RUN ln -sf /dev/stderr /var/log/nginx/error.log
-RUN ln -sf /dev/stdout /var/log/nginx/access.log
-
 EXPOSE 80 9000
 
 CMD ["/usr/bin/supervisord"]
