@@ -26,6 +26,9 @@ RUN mkdir -p /var/log/supervisor
 RUN rm /etc/nginx/nginx.conf
 ADD nginx.conf /etc/nginx/nginx.conf
 
+RUN rm /etc/nginx/sites-enabled/default
+ADD sites-enabled/default /etc/nginx/sites-enabled/default
+
 VOLUME ["/var/www", "/etc/nginx/sites-enabled"]
 
 ADD nginx-supervisor.ini /etc/supervisor.d/nginx-supervisor.ini
