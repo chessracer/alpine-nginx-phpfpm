@@ -33,7 +33,6 @@ ENV TIMEZONE America/Los_Angeles
  
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
-RUN ln -sf /dev/stdout /var/www/storage/logs/laravel.log
 
 EXPOSE 80 9000
 
