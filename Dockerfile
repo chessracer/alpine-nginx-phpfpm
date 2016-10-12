@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:3.2
 MAINTAINER Jonathan Baker <chessracer@gmail.com>
 
 RUN apk --update add \
@@ -14,6 +14,7 @@ RUN apk --update add \
   php-pdo_sqlite \
   php-ctype \
   php-zlib \
+  php-iconv \
   curl \
   php-curl \
   supervisor
